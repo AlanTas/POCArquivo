@@ -21,13 +21,13 @@ namespace POCArquivo.ViewModels
 
         public async Task SalvarImgArquivo()
         {
+            var mainDir = FileSystem.AppDataDirectory;
             try
             {
                 var req = WebRequest.Create("https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png");
                 var response = req.GetResponse();
 
                 var nomeArquivo = "assinatura" + Guid.NewGuid().ToString() + "|" + Guid.NewGuid().ToString() + "|" + Guid.NewGuid().ToString() + ".png";
-                var mainDir = FileSystem.AppDataDirectory;
 
                 string localPath = Path.Combine(mainDir, nomeArquivo);
 
@@ -37,13 +37,13 @@ namespace POCArquivo.ViewModels
 
                 File.WriteAllBytes(localPath, imgBytes);
 
-                var fileEntries = Directory.GetFiles(mainDir, "assinatura*");
+                //var fileEntries = Directory.GetFiles(mainDir, "assinatura*");
 
-                foreach(var fileEntry in fileEntries)
-                {
-                    var file = File.ReadAllBytes(fileEntry);
-                    var fileString = JsonConvert.SerializeObject(file);
-                }
+                //foreach(var fileEntry in fileEntries)
+                //{
+                //    var file = File.ReadAllBytes(fileEntry);
+                //    var fileString = JsonConvert.SerializeObject(file);
+                //}
             }
             catch (Exception e)
             {
