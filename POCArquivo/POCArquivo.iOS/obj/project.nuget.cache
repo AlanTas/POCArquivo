@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vh99e6LCi2zH77XewFV1BG9c0OBGMawBHx7Nv/zPW+Oq+UzthDcTMDhm4t+BIA8L6D3NVojG38U3v7oXJoqpPA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vbntb-07\\Documents\\dotnet\\POCArquivo\\POCArquivo\\POCArquivo.iOS\\POCArquivo.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vbntb-07\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\vbntb-07\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\vbntb-07\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\vbntb-07\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.3 to 1.7.0. Reference the package directly from the project to select a different version. \r\n POCArquivo.iOS -> POCArquivo -> Xamarin.Essentials (>= 1.7.3) \r\n POCArquivo.iOS -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}
